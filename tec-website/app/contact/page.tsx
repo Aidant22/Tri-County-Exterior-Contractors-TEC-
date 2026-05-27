@@ -56,7 +56,7 @@ export default function Contact() {
         templateId,
         {
           to_name: 'Tri-County Exterior Contractors',
-          to_email: '22atobar@gmail.com',
+          to_email: 'tricountyexteriorcontractors@gmail.com',
           name: from_name,
           email: reply_to,
           from_name,

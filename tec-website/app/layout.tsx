@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import Header from "@/components/ui/header";
+import Footer from "@/components/ui/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TEC Landscaping",
+  title: "TEC Lawncare & Landscaping",
   description: "All your landscaping needs solved with one call!",
 };
 
@@ -22,12 +25,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
+return (
+  <html
+    lang="en"
+    className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+  >
+    <body className="min-h-full flex flex-col bg-slate-100 text-slate-900">
+      <Header />
+      <main className="flex-1 flex flex-col">
+        {children}
+      </main>
+      <Footer />
+    </body>
+  </html>
   );
 }

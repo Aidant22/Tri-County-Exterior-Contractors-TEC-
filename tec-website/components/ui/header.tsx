@@ -9,23 +9,23 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full border-b-2 bg-gray-400/60 font-serif font-bold text-xl relative z-50">
+    <header className="w-full bg-white border-b-2 font-serif font-bold text-xl relative z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4 md:p-6">
         
         <Link href="/" className="flex items-center gap-2 shrink-0">
-          <Image 
+          {/* <Image 
             src="/Images_clip/tree_wo_bg.png" 
             alt="clipart style tree" 
             width={50} 
             height={50}
             className="w-10 h-10 md:w-12 md:h-12"
-          />
-          <span className="text-base sm:text-lg md:text-xl whitespace-nowrap">
+          /> */}
+          <span className="text-base sm:text-lg md:text-xl text-[#0047AB] whitespace-nowrap">
             Tri-County Exterior Contractors
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex text-[#0047AB] items-center gap-8">
           <Link href="/services" className="hover:underline transition-all">Services</Link>
           <Link href="/about" className="hover:underline transition-all">About</Link>
           <Link href="/contact" className="hover:underline transition-all">Contact</Link>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Sitemap for tecexterior.com -->
+  <url>
+    <loc>https://tecexterior.com/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://tecexterior.com/services</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://tecexterior.com/about</loc>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://tecexterior.com/contact</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://tecexterior.com/locations/bowling-green</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://tecexterior.com/locations/perrysburg</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://tecexterior.com/locations/toledo</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>

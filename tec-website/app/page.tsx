@@ -1,6 +1,11 @@
-import Footer from "@/components/ui/footer";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Lawncare & Landscaping in Bowling Green, OH — Tri-County Exterior Contractors",
+  description: "Tri-County Exterior Contractors provides reliable lawncare, landscaping, and seasonal cleanup in Bowling Green and Northwest Ohio. Call 419-277-0435 for a free estimate.",
+};
 
 export default function Home() {
   return (

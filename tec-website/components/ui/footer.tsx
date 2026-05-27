@@ -34,6 +34,21 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link href="/locations/bowling-green" className="hover:text-white transition-colors">
+                  Bowling Green
+                </Link>
+              </li>
+              <li>
+                <Link href="/locations/perrysburg" className="hover:text-white transition-colors">
+                  Perrysburg
+                </Link>
+              </li>
+              <li>
+                <Link href="/locations/toledo" className="hover:text-white transition-colors">
+                  Toledo
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -56,6 +71,12 @@ export default function Footer() {
               </p>
               <p>
                 <span className="font-semibold text-white">Service Area: </span> Wood, Lucas &amp; Ottawa counties
+              </p>
+              <p>
+                <span className="font-semibold text-white">Reviews: </span>
+                <a href={process.env.NEXT_PUBLIC_GOOGLE_REVIEW_URL || "https://g.page/PLACEHOLDER_REVIEW_LINK"} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  Leave a review
+                </a>
               </p>
             </div>
           </div>

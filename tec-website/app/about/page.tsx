@@ -1,11 +1,13 @@
 import Image from "next/image"
 import Link from "next/link"
+import Script from "next/script"
 
 export default function AboutPage() {
     return (
         <div>
         <section className="relative flex h-[calc(100vh-64px)] items-center justify-center px-4 text-center overflow-hidden">
             
+
             <Image 
             src="/work_images/Mowed_lawn_2.jpeg" 
             alt="picture of a lawn mowed by TEC" 
@@ -87,7 +89,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900">Uncompromising Quality</h3>
                 <p className="text-slate-600">
-                    We utilize professional-grade machinery and state-of-the-art techniques to guarantee that every edge is clean, every lawn is lush, and every plant is healthy.
+                    We guarantee that every edge is clean, every lawn is lush, and every plant is healthy.
                 </p>
                 </div>
 
@@ -111,7 +113,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900">Local Stewardship</h3>
                 <p className="text-slate-600">
-                    Because we live and work in the Wood, Ottawa, and Lucas communities, we utilize sustainable lawn care practices to keep local ecosystems safe, clean, and thriving.
+                    Because we live and work in the Wood, Ottawa, and Lucas communities, we are committed to serving our neighbors with quality work and personalized attention.
                 </p>
                 </div>
 
@@ -140,6 +142,16 @@ export default function AboutPage() {
             </div>
             </section>
         </div>
+        <Script id="breadcrumb-about" strategy="afterInteractive" type="application/ld+json">
+            {`{
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "${process.env.NEXT_PUBLIC_SITE_URL || "https://tecexterior.com"}/" },
+                    { "@type": "ListItem", "position": 2, "name": "About", "item": "${process.env.NEXT_PUBLIC_SITE_URL || "https://tecexterior.com"}/about" }
+                ]
+            }`}
+        </Script>
         </div>
     )
 }

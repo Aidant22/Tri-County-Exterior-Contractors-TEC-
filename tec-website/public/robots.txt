@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap for production
+Sitemap: https://tecexterior.com/sitemap.xml

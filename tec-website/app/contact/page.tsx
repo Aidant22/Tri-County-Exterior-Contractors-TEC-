@@ -2,6 +2,7 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
@@ -279,6 +280,14 @@ export default function Contact() {
                     <p className="text-lg font-semibold text-slate-800">Wood, Lucas, &amp; Ottawa Counties</p>
                   </div>
                 </div>
+                
+                <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                  <h3 className="text-lg font-semibold text-slate-900">Leave a Review</h3>
+                  <p className="mt-2 text-sm text-slate-600">If we exceeded your expectations, please consider leaving a review. It helps our small business grow.</p>
+                  <div className="mt-3">
+                    <a href={process.env.NEXT_PUBLIC_GOOGLE_REVIEW_URL || "https://g.page/PLACEHOLDER_REVIEW_LINK"} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#0047AB] text-white px-4 py-2 rounded-lg hover:bg-[#003b94]">Leave a review</a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -305,6 +314,16 @@ export default function Contact() {
 
         </div>
       </section>
+      <Script id="breadcrumb-contact" strategy="afterInteractive" type="application/ld+json">
+        {`{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "${process.env.NEXT_PUBLIC_SITE_URL || "https://tecexterior.com"}/" },
+            { "@type": "ListItem", "position": 2, "name": "Contact", "item": "${process.env.NEXT_PUBLIC_SITE_URL || "https://tecexterior.com"}/contact" }
+          ]
+        }`}
+      </Script>
 
     </div>
   );

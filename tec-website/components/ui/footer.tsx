@@ -72,12 +72,12 @@ export default function Footer() {
               <p>
                 <span className="font-semibold text-white">Service Area: </span> Wood, Lucas &amp; Ottawa counties
               </p>
-              <p>
+              {/* <p>
                 <span className="font-semibold text-white">Reviews: </span>
                 <a href={process.env.NEXT_PUBLIC_GOOGLE_REVIEW_URL || "https://g.page/PLACEHOLDER_REVIEW_LINK"} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                   Leave a review
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

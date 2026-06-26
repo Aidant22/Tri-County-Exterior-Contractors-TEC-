@@ -59,8 +59,8 @@ export default function Footer() {
             <div className="mt-6 space-y-4 text-slate-300">
               <p>
                 <span className="font-semibold text-white">Phone: </span> 
-                <Link href="tel:419-277-0435" className="hover:text-white transition-colors">
-                  419-277-0435
+                <Link href="tel:419-341-3761" className="hover:text-white transition-colors">
+                  419-341-3761
                 </Link>
               </p>
               <p>

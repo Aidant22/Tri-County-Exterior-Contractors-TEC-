@@ -55,14 +55,14 @@ return (
           "@type": "LocalBusiness",
           "name": "Tri-County Exterior Contractors",
           "image": ["${process.env.NEXT_PUBLIC_SITE_URL || "https://tecexterior.com"}/work_images/Mowed_lawn_2.jpeg"],
-          "telephone": "419-277-0435",
+          "telephone": "4193413761",
           "email": "tricountyexteriorcontractors@gmail.com",
           "url": "${process.env.NEXT_PUBLIC_SITE_URL || "https://tecexterior.com"}",
           "sameAs": [],
           "contactPoint": [
             {
               "@type": "ContactPoint",
-              "telephone": "419-277-0435",
+              "telephone": "4193413761",
               "contactType": "customer service",
               "areaServed": ["Wood County", "Lucas County", "Ottawa County"],
               "availableLanguage": ["English"]

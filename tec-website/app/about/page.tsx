@@ -133,10 +133,10 @@ export default function AboutPage() {
                     Explore Services
                 </Link>
                 <Link 
-                    href="tel:419-277-0435" 
+                    href="tel:419-341-3761" 
                     className="inline-flex items-center justify-center bg-white text-slate-950 font-bold px-8 py-3 rounded-xl shadow-lg hover:bg-slate-100 transform hover:-translate-y-0.5 transition-all duration-200"
                 >
-                    Call (419) 277-0435
+                    Call (419) 341-3761
                 </Link>
                 </div>
             </div>
